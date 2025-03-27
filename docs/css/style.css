@@ -209,6 +209,19 @@ select:-webkit-autofill:focus {
   background-color: #1D1D1D;
 }
 
+.lang-button {
+  font-family: 'Sora', sans-serif;
+  font-size: 1.8rem;
+  background: none;
+  color: #1FB58F;
+  border: none;
+  cursor: pointer;
+}
+
+.lang-button:hover {
+  color: #FCFCFC;
+}
+
 /* ------------- END OF HEADER ------------- */
 
 /* ------------- SECTIONS ------------- */

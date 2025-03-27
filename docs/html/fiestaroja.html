@@ -16,11 +16,23 @@
         href="../css/style.css">
     <script src="../js/script.js"
         defer></script>
+    <link rel="../apple-touch-icon"
+        sizes="180x180"
+        href="../apple-touch-icon.png">
+    <link rel="icon"
+        type="../image/png"
+        sizes="32x32"
+        href="../favicon-32x32.png">
+    <link rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="../favicon-16x16.png">
+    <link rel="manifest"
+        href="../site.webmanifest">
 </head>
 
 <body>
     <!-- NAVIGATION -->
-
     <header id="navbar"
         class="page-navigation">
         <a href="../index.html"
@@ -38,13 +50,20 @@
             id="navLinks">
             <a href="../index.html"
                 class="page-navigation__links__link">
-                <span class="page-navigation__links__menu__item">about</span>
+                <span id="about"
+                    class="page-navigation__links__menu__item">about</span>
             </a>
             <a href="projects.html"
                 class="page-navigation__links__link">
-                <span class="page-navigation__links__menu__item">projects</span>
+                <span id="projects"
+                    class="page-navigation__links__menu__item">projects</span>
             </a>
+            <span class="page-navigation__links__menu__item">
+                <button class="lang-button"
+                    id="lang-button">[ENG]</button>
+            </span>
         </nav>
+
     </header>
     <!-- END OF NAVIGATION -->
     <!-- MAIN -->
@@ -52,12 +71,15 @@
         <!-- DESCRIPTION -->
         <section class="section section--padding-top-big section--column">
             <article class="section__text unrevealed">
-                <h1 class="title title--small color--green">Fiesta Roja —poster</h1>
+                <h1 id="frp-title"
+                    class="title title--small color--green">Fiesta Roja —poster</h1>
 
                 <!-- TEXT -->
                 <div class="section--text unrevealed">
-                    <h3 class="subtitle color--green unrevealed">description</h3>
-                    <p class="paragraph color--offwhite unrevealed">
+                    <h3 id="description"
+                        class="subtitle color--green unrevealed">description</h3>
+                    <p id="frp-description"
+                        class="paragraph color--offwhite unrevealed">
                         For this project, I designed a poster and a pamphlet for "Fiesta Roja", an event deeply rooted
                         in social and political
                         activism. The visual identity reflects its themes through bold iconography inspired by the
@@ -79,7 +101,8 @@
                     class="project__button"
                     target="_blank"
                     rel="noopener">
-                    <span class="project__button__text">see on Behance</span>
+                    <span id="button-behance"
+                        class="project__button__text">see on Behance</span>
                 </a>
             </div>
         </section>

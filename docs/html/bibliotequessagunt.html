@@ -16,6 +16,19 @@
         href="../css/style.css">
     <script src="../js/script.js"
         defer></script>
+    <link rel="../apple-touch-icon"
+        sizes="180x180"
+        href="../apple-touch-icon.png">
+    <link rel="icon"
+        type="../image/png"
+        sizes="32x32"
+        href="../favicon-32x32.png">
+    <link rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="../favicon-16x16.png">
+    <link rel="manifest"
+        href="../site.webmanifest">
 </head>
 
 <body>
@@ -32,17 +45,25 @@
             <span class="page-navigation__hamburger__line"></span>
             <span class="page-navigation__hamburger__line"></span>
         </div>
+
         <nav class="page-navigation__links"
             id="navLinks">
             <a href="../index.html"
                 class="page-navigation__links__link">
-                <span class="page-navigation__links__menu__item">about</span>
+                <span id="about"
+                    class="page-navigation__links__menu__item">about</span>
             </a>
             <a href="projects.html"
                 class="page-navigation__links__link">
-                <span class="page-navigation__links__menu__item">projects</span>
+                <span id="projects"
+                    class="page-navigation__links__menu__item">projects</span>
             </a>
+            <span class="page-navigation__links__menu__item">
+                <button class="lang-button"
+                    id="lang-button">[ENG]</button>
+            </span>
         </nav>
+
     </header>
     <!-- END OF NAVIGATION -->
     <!-- MAIN -->
@@ -50,12 +71,15 @@
         <!-- DESCRIPTION -->
         <section class="section section--padding-top-big section--column">
             <article class="section__text unrevealed">
-                <h1 class="title title--small color--green">Biblioteques de Sagunt</h1>
+                <h1 id="bs-title"
+                    class="title title--small color--green">Biblioteques de Sagunt</h1>
 
                 <!-- TEXT -->
                 <div class="section--text unrevealed">
-                    <h3 class="subtitle color--green unrevealed">description</h3>
-                    <p class="paragraph color--offwhite unrevealed">
+                    <h3 id="description"
+                        class="subtitle color--green unrevealed">description</h3>
+                    <p id="bs-description"
+                        class="paragraph color--offwhite unrevealed">
                         I redesigned the 'Biblioteques de Sagunt' logo to create a more cohesive and versatile visual
                         identity. The concept for the new version combines the initials 'B' and 'S' with the shape of
                         stacked books, reinforcing the essence

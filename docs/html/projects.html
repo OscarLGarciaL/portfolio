@@ -11,14 +11,28 @@
         href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <title>OSLUHU | Projects</title>
+    <title>Óscar García | Projects</title>
     <link rel="stylesheet"
         href="../css/style.css">
     <script src="../js/script.js"
         defer></script>
+    <link rel="../apple-touch-icon"
+        sizes="180x180"
+        href="../apple-touch-icon.png">
+    <link rel="icon"
+        type="../image/png"
+        sizes="32x32"
+        href="../favicon-32x32.png">
+    <link rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="../favicon-16x16.png">
+    <link rel="manifest"
+        href="../site.webmanifest">
 </head>
 
 <body>
+
     <!-- NAVIGATION -->
     <header id="navbar"
         class="page-navigation">
@@ -37,15 +51,22 @@
             id="navLinks">
             <a href="../index.html"
                 class="page-navigation__links__link">
-                <span class="page-navigation__links__menu__item">about</span>
+                <span id="about"
+                    class="page-navigation__links__menu__item">about</span>
             </a>
-            <span href="projects.html"
-                class="page-navigation__links__link--active">
-                <span class="page-navigation__links__menu__item">projects</span>
+            <span class="page-navigation__links__link--active">
+                <span id="projects"
+                    class="page-navigation__links__menu__item">projects</span>
+            </span>
+            <span class="page-navigation__links__menu__item">
+                <button class="lang-button"
+                    id="lang-button">[ENG]</button>
             </span>
         </nav>
+
     </header>
     <!-- END OF NAVIGATION -->
+
     <!-- MAIN -->
     <main class="wrapper">
         <!-- FILTER BUTTONS -->
@@ -54,15 +75,20 @@
                 class="filter-container__filter-button">filter</button>
             <div id="filterMenu"
                 class="filter-container__menu unrevealed">
-                <button class="filter-container__menu__button"
+                <button id="all"
+                    class="filter-container__menu__button"
                     data-filter="all">all</button>
-                <button class="filter-container__menu__button"
+                <button id="animation"
+                    class="filter-container__menu__button"
                     data-filter="animation">animation</button>
-                <button class="filter-container__menu__button"
+                <button id="brand"
+                    class="filter-container__menu__button"
                     data-filter="brand">brand</button>
-                <button class="filter-container__menu__button"
+                <button id="print"
+                    class="filter-container__menu__button"
                     data-filter="print">print</button>
-                <button class="filter-container__menu__button"
+                <button id="web"
+                    class="filter-container__menu__button"
                     data-filter="web">web</button>
             </div>
         </div>
@@ -78,11 +104,13 @@
                     class="portfolio-grid__img">
                 <div class="portfolio-grid__overlay">
                     <div class="portfolio-grid__overlay__info">
-                        <span class="overlay__info__name">
+                        <span id="projects-reel"
+                            class="overlay__info__name">
                             Motion Graphics Reel<br>—2024
                         </span>
                         <ul class="overlay__info__keywords">
-                            <li class="overlay__info__keyword">ANIMATION</li>
+                            <li id="keyword-animation"
+                                class="overlay__info__keyword">ANIMATION</li>
                         </ul>
                     </div>
                 </div>
@@ -95,11 +123,13 @@
                     class="portfolio-grid__img">
                 <div class="portfolio-grid__overlay">
                     <div class="portfolio-grid__overlay__info">
-                        <span class="overlay__info__name">
+                        <span id="projects-biblioteques"
+                            class="overlay__info__name">
                             "Biblioteques de Sagunt"<br>—rebranding
                         </span>
                         <ul class="overlay__info__keywords">
-                            <li class="overlay__info__keyword">BRAND</li>
+                            <li id="keyword-brand"
+                                class="overlay__info__keyword">BRAND</li>
                         </ul>
                     </div>
                 </div>
@@ -112,12 +142,15 @@
                     class="portfolio-grid__img">
                 <div class="portfolio-grid__overlay">
                     <div class="portfolio-grid__overlay__info">
-                        <span class="overlay__info__name">
+                        <span id="projects-campaign"
+                            class="overlay__info__name">
                             Campaign Materials<br>—2019
                         </span>
                         <ul class="overlay__info__keywords">
-                            <li class="overlay__info__keyword">BRAND</li>
-                            <li class="overlay__info__keyword">PRINT</li>
+                            <li id="keyword-brand"
+                                class="overlay__info__keyword">BRAND</li>
+                            <li id="keyword-print"
+                                class="overlay__info__keyword">PRINT</li>
                         </ul>
                     </div>
                 </div>
@@ -131,12 +164,15 @@
                     class="portfolio-grid__img">
                 <div class="portfolio-grid__overlay">
                     <div class="portfolio-grid__overlay__info">
-                        <span class="overlay__info__name">
+                        <span id="projects-dental"
+                            class="overlay__info__name">
                             "DentalBraquets"<br>—website
                         </span>
                         <ul class="overlay__info__keywords">
-                            <li class="overlay__info__keyword">BRAND</li>
-                            <li class="overlay__info__keyword">WEB</li>
+                            <li id="keyword-brand"
+                                class="overlay__info__keyword">BRAND</li>
+                            <li id="keyword-web"
+                                class="overlay__info__keyword">WEB</li>
                         </ul>
                     </div>
                 </div>
@@ -150,11 +186,13 @@
                     class="portfolio-grid__img">
                 <div class="portfolio-grid__overlay">
                     <div class="portfolio-grid__overlay__info">
-                        <span class="overlay__info__name">
+                        <span id="projects-easd"
+                            class="overlay__info__name">
                             "EASD"<br>—Erasmus booklet
                         </span>
                         <ul class="overlay__info__keywords">
-                            <li class="overlay__info__keyword">PRINT</li>
+                            <li id="keyword-print"
+                                class="overlay__info__keyword">PRINT</li>
                         </ul>
                     </div>
                 </div>
@@ -168,11 +206,13 @@
                     class="portfolio-grid__img">
                 <div class="portfolio-grid__overlay">
                     <div class="portfolio-grid__overlay__info">
-                        <span class="overlay__info__name">
+                        <span id="projects-roja"
+                            class="overlay__info__name">
                             "Fiesta Roja"<br>—poster
                         </span>
                         <ul class="overlay__info__keywords">
-                            <li class="overlay__info__keyword">PRINT</li>
+                            <li id="keyword-print"
+                                class="overlay__info__keyword">PRINT</li>
                         </ul>
                     </div>
                 </div>
@@ -186,11 +226,13 @@
                     class="portfolio-grid__img">
                 <div class="portfolio-grid__overlay">
                     <div class="portfolio-grid__overlay__info">
-                        <span class="overlay__info__name">
+                        <span id="projects-solstu"
+                            class="overlay__info__name">
                             "I Tu, Sols Tu"<br>—music video
                         </span>
                         <ul class="overlay__info__keywords">
-                            <li class="overlay__info__keyword">ANIMATION</li>
+                            <li id="keyword-animation"
+                                class="overlay__info__keyword">ANIMATION</li>
                         </ul>
                     </div>
                 </div>
@@ -204,11 +246,13 @@
                     class="portfolio-grid__img">
                 <div class="portfolio-grid__overlay">
                     <div class="portfolio-grid__overlay__info">
-                        <span class="overlay__info__name">
+                        <span id="projects-menuda"
+                            class="overlay__info__name">
                             "Menuda Ribera"<br>—social media ilustrations
                         </span>
                         <ul class="overlay__info__keywords">
-                            <li class="overlay__info__keyword">BRAND</li>
+                            <li id="keyword-brand"
+                                class="overlay__info__keyword">BRAND</li>
                         </ul>
                     </div>
                 </div>
@@ -222,11 +266,13 @@
                     class="portfolio-grid__img">
                 <div class="portfolio-grid__overlay">
                     <div class="portfolio-grid__overlay__info">
-                        <span class="overlay__info__name">
+                        <span id="projects-montan"
+                            class="overlay__info__name">
                             "Montán"<br>—redesign
                         </span>
                         <ul class="overlay__info__keywords">
-                            <li class="overlay__info__keyword">BRAND</li>
+                            <li id="keyword-brand"
+                                class="overlay__info__keyword">BRAND</li>
                         </ul>
                     </div>
                 </div>
@@ -240,12 +286,15 @@
                     class="portfolio-grid__img">
                 <div class="portfolio-grid__overlay">
                     <div class="portfolio-grid__overlay__info">
-                        <span class="overlay__info__name">
+                        <span id="projects-bloom"
+                            class="overlay__info__name">
                             "Personal Bloom"<br>—logo reveal for SYFY
                         </span>
                         <ul class="overlay__info__keywords">
-                            <li class="overlay__info__keyword">ANIMATION</li>
-                            <li class="overlay__info__keyword">BRAND</li>
+                            <li id="keyword-animation"
+                                class="overlay__info__keyword">ANIMATION</li>
+                            <li id="keyword-brand"
+                                class="overlay__info__keyword">BRAND</li>
                         </ul>
                     </div>
                 </div>
@@ -259,11 +308,13 @@
                     class="portfolio-grid__img">
                 <div class="portfolio-grid__overlay">
                     <div class="portfolio-grid__overlay__info">
-                        <span class="overlay__info__name">
+                        <span id="projects-republica"
+                            class="overlay__info__name">
                             "Por la III República"<br>—posters
                         </span>
                         <ul class="overlay__info__keywords">
-                            <li class="overlay__info__keyword">PRINT</li>
+                            <li id="keyword-print"
+                                class="overlay__info__keyword">PRINT</li>
                         </ul>
                     </div>
                 </div>
@@ -276,11 +327,13 @@
                     class="portfolio-grid__img">
                 <div class="portfolio-grid__overlay">
                     <div class="portfolio-grid__overlay__info">
-                        <span class="overlay__info__name">
+                        <span id="projects-purple"
+                            class="overlay__info__name">
                             "The Purple Fight"<br>—credits scenes
                         </span>
                         <ul class="overlay__info__keywords">
-                            <li class="overlay__info__keyword">ANIMATION</li>
+                            <li id="keyword-animation"
+                                class="overlay__info__keyword">ANIMATION</li>
                         </ul>
                     </div>
                 </div>
@@ -294,11 +347,13 @@
                     class="portfolio-grid__img">
                 <div class="portfolio-grid__overlay">
                     <div class="portfolio-grid__overlay__info">
-                        <span class="overlay__info__name">
+                        <span id="projects-silenci"
+                            class="overlay__info__name">
                             "Silenci Per Favor"<br>—animated video
                         </span>
                         <ul class="overlay__info__keywords">
-                            <li class="overlay__info__keyword">ANIMATION</li>
+                            <li id="keyword-animation"
+                                class="overlay__info__keyword">ANIMATION</li>
                         </ul>
                     </div>
                 </div>
@@ -312,12 +367,15 @@
                     class="portfolio-grid__img">
                 <div class="portfolio-grid__overlay">
                     <div class="portfolio-grid__overlay__info">
-                        <span class="overlay__info__name">
+                        <span id="projects-verdifresh"
+                            class="overlay__info__name">
                             "VerdiFresh"<br>—style guide
                         </span>
                         <ul class="overlay__info__keywords">
-                            <li class="overlay__info__keyword">BRAND</li>
-                            <li class="overlay__info__keyword">PRINT</li>
+                            <li id="keyword-brand"
+                                class="overlay__info__keyword">BRAND</li>
+                            <li id="keyword-print"
+                                class="overlay__info__keyword">PRINT</li>
                         </ul>
                     </div>
                 </div>

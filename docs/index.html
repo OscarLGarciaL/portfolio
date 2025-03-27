@@ -11,11 +11,24 @@
         href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <title>OSLUHU | Turning Ideas into Visuals</title>
+    <title>Óscar García | Turning Ideas into Visuals</title>
     <link rel="stylesheet"
         href="css/style.css">
     <script src="js/script.js"
         defer></script>
+    <link rel="apple-touch-icon"
+        sizes="180x180"
+        href="apple-touch-icon.png">
+    <link rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="favicon-32x32.png">
+    <link rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="favicon-16x16.png">
+    <link rel="manifest"
+        href="site.webmanifest">
 </head>
 
 <body>
@@ -34,14 +47,19 @@
         </div>
         <nav class="page-navigation__links"
             id="navLinks">
-            <span href="index.html"
-                class="page-navigation__links__link--active">
-                <span class="page-navigation__links__menu__item">about</span>
+            <span class="page-navigation__links__link--active">
+                <span id="about"
+                    class="page-navigation__links__menu__item">about</span>
             </span>
             <a href="html/projects.html"
                 class="page-navigation__links__link">
-                <span class="page-navigation__links__menu__item">projects</span>
+                <span id="projects"
+                    class="page-navigation__links__menu__item">projects</span>
             </a>
+            <span class="page-navigation__links__menu__item">
+                <button class="lang-button"
+                    id="lang-button">[english]</button>
+            </span>
         </nav>
     </header>
     <!-- END OF NAVIGATION -->
@@ -80,10 +98,14 @@
                 </div>
             </div>
             <article class="section__text--column">
-                <h1 class="title color--offwhite title--big unrevealed">Hi, I'm
-                    Oscar! —</span><br><span class="color--green">turning ideas into visuals</span>
+                <h1 class="title color--offwhite title--big unrevealed"><span id="index-title-1">Hi, I'm
+                        Oscar! —</span><br><span id="index-title-2"
+                        class="color--green">turning ideas into
+                        visuals</span>
                 </h1>
-                <p class="paragraph color--offwhite unrevealed">From an early age, I’ve been passionate about art,
+                <p id="index-description"
+                    class="paragraph color--offwhite unrevealed">From an early age, I’ve been
+                    passionate about art,
                     spending
                     countless hours drawing and painting. This creative drive naturally led me to Graphic Design, where
                     I help bring ideas to life through visual storytelling.I’ve worked with clients who needed brand
@@ -91,11 +113,14 @@
                     designs that blend creativity and strategy to leave a
                     lasting impact.</p>
                 <div class="education section--padding-top-small">
-                    <h2 class="subtitle color--green unrevealed">education</h2>
+                    <h2 id="education"
+                        class="subtitle color--green unrevealed">education</h2>
                     <div class="education__item unrevealed">
                         <span class="education__date">2023</span>
                         <div class="education__content unrevealed">
-                            <h3 class="education__content__title unrevealed">ADVANCED ANIMATION TRAINING IN AFTER
+                            <h3 id="education-animation"
+                                class="education__content__title unrevealed">ADVANCED ANIMATION
+                                TRAINING IN AFTER
                                 EFFECTS</h3>
                             <p class="education__content__subtitle unrevealed">School of Motion<br>(2023)</p>
                         </div>
@@ -103,7 +128,9 @@
                     <div class="education__item">
                         <span class="education__date unrevealed">2021</span>
                         <div class="education__content unrevealed">
-                            <h3 class="education__content__title unrevealed">POSTGRADUATE SPECIALIZATION IN
+                            <h3 id="education-web"
+                                class="education__content__title unrevealed">POSTGRADUATE
+                                SPECIALIZATION IN
                                 UX/UI, DIGITAL
                                 MARKETING, AND FRONT-END WEB DEVELOPMENT</h3>
                             <p class="education__content__subtitle unrevealed">ESAT Valencia<br>(2020 - 2021)</p>
@@ -112,7 +139,9 @@
                     <div class="education__item">
                         <span class="education__date unrevealed">2017</span>
                         <div class="education__content unrevealed">
-                            <h3 class="education__content__title unrevealed">BACHELOR'S DEGREE IN GRAPHIC DESIGN
+                            <h3 id="education-graphic"
+                                class="education__content__title unrevealed">BACHELOR'S DEGREE IN
+                                GRAPHIC DESIGN
                             </h3>
                             <p class="education__content__subtitle unrevealed">EASD Valencia<br>(2013 - 2017)</p>
                         </div>
@@ -121,7 +150,9 @@
                     <div class="education__item unrevealed">
                         <span class="education__date">2013</span>
                         <div class="education__content unrevealed">
-                            <h3 class="education__content__title unrevealed">DEGREE IN CHEMISTRY</h3>
+                            <h3 id="education-chemistry"
+                                class="education__content__title unrevealed">DEGREE IN
+                                CHEMISTRY</h3>
                             <p class="education__content__subtitle unrevealed">Universitat de València<br>(2006-2013)
                             </p>
                         </div>

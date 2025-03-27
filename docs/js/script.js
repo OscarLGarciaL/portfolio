@@ -1,3 +1,46 @@
+// CHANGE LANGUAGE
+async function cargarIdioma(idioma) {
+    try {
+        // Construir la ruta absoluta asegurando que siempre busque en /lang/
+        const rutaJSON = `${window.location.origin}/docs/lang/${idioma}.json`;
+
+        // Cargar el archivo JSON del idioma seleccionado
+        const respuesta = await fetch(rutaJSON);
+        const textos = await respuesta.json();
+
+        // Buscar todos los elementos con un ID y actualizar su texto
+        document.querySelectorAll("[id]").forEach(elemento => {
+            const id = elemento.id;
+            if (textos[id]) {
+                elemento.innerHTML = textos[id];
+            }
+        });
+
+        // Guardar la preferencia de idioma
+        localStorage.setItem("idioma", idioma);
+    } catch (error) {
+        console.error("Error cargando el idioma:", error);
+    }
+}
+
+// Función para alternar entre inglés y español
+function cambiarIdioma() {
+    const idiomaActual = localStorage.getItem("idioma") === "es" ? "en" : "es";
+    cargarIdioma(idiomaActual);
+}
+
+// Detectar el idioma guardado y aplicarlo al cargar la página
+document.addEventListener("DOMContentLoaded", () => {
+    const idiomaGuardado = localStorage.getItem("idioma") || "en";
+    cargarIdioma(idiomaGuardado);
+
+    // Agregar evento al botón para cambiar el idioma
+    document.getElementById("lang-button").addEventListener("click", cambiarIdioma);
+});
+
+
+
+
 // REVEAL
 document.addEventListener("DOMContentLoaded", function () {
     const elements = document.querySelectorAll(".unrevealed");

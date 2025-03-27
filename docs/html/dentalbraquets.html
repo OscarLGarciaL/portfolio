@@ -3,35 +3,67 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <title>OSLUHU | DentalBraquets</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/script.js" defer></script>
+    <link rel="stylesheet"
+        href="../css/style.css">
+    <script src="../js/script.js"
+        defer></script>
+    <link rel="../apple-touch-icon"
+        sizes="180x180"
+        href="../apple-touch-icon.png">
+    <link rel="icon"
+        type="../image/png"
+        sizes="32x32"
+        href="../favicon-32x32.png">
+    <link rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="../favicon-16x16.png">
+    <link rel="manifest"
+        href="../site.webmanifest">
 </head>
 
 <body>
     <!-- NAVIGATION -->
-    <header id="navbar" class="page-navigation">
-        <a href="../index.html" class="page-navigation__logo">
+    <header id="navbar"
+        class="page-navigation">
+        <a href="../index.html"
+            class="page-navigation__logo">
             <span class="page-navigation__logo__text">OSLUHU</span>
         </a>
-        <div class="page-navigation__hamburger" id="menuToggle">
+        <div class="page-navigation__hamburger"
+            id="menuToggle">
             <span class="page-navigation__hamburger__line"></span>
             <span class="page-navigation__hamburger__line"></span>
             <span class="page-navigation__hamburger__line"></span>
         </div>
-        <nav class="page-navigation__links" id="navLinks">
-            <a href="../index.html" class="page-navigation__links__link">
-                <span class="page-navigation__links__menu__item">about</span>
+
+        <nav class="page-navigation__links"
+            id="navLinks">
+            <a href="../index.html"
+                class="page-navigation__links__link">
+                <span id="about"
+                    class="page-navigation__links__menu__item">about</span>
             </a>
-            <a href="projects.html" class="page-navigation__links__link">
-                <span class="page-navigation__links__menu__item">projects</span>
+            <a href="projects.html"
+                class="page-navigation__links__link">
+                <span id="projects"
+                    class="page-navigation__links__menu__item">projects</span>
             </a>
+            <span class="page-navigation__links__menu__item">
+                <button class="lang-button"
+                    id="lang-button">[ENG]</button>
+            </span>
         </nav>
+
     </header>
     <!-- END OF NAVIGATION -->
     <!-- MAIN -->
@@ -39,7 +71,8 @@
         <!-- DESCRIPTION -->
         <section class="section section--padding-top-big section--column">
             <article class="section__text unrevealed">
-                <h1 class="title title--small color--green">DentalBraquets —website</h1>
+                <h1 id="dbw-title"
+                    class="title title--small color--green">DentalBraquets —website</h1>
                 <!-- RESPONSIVE WEB -->
                 <div class="responsive-devices unrevealed">
                     <!-- PC -->
@@ -115,8 +148,10 @@
 
                 <!-- TEXT -->
                 <div class="section--text unrevealed">
-                    <h3 class="subtitle color--green unrevealed">description</h3>
-                    <p class="paragraph color--offwhite unrevealed">
+                    <h3 id="description"
+                        class="subtitle color--green unrevealed">description</h3>
+                    <p id="dbw-description"
+                        class="paragraph color--offwhite unrevealed">
                         I created this project to offer customized websites for dental clinics, ensuring they not only
                         look
                         professional but
@@ -136,9 +171,12 @@
         <!-- GO-TO-PROJECT BUTTON -->
         <section class="section section--padding-top-small">
             <div class="project__container unrevealed">
-                <a href="https://oscarlgarcial.github.io/dentalbraquets/index.html" class="project__button"
-                    target="_blank" rel="noopener">
-                    <span class="project__button__text">see project</span>
+                <a href="https://oscarlgarcial.github.io/dentalbraquets/index.html"
+                    class="project__button"
+                    target="_blank"
+                    rel="noopener">
+                    <span id="button-seeweb"
+                        class="project__button__text">see project</span>
                 </a>
             </div>
         </section>
@@ -151,16 +189,19 @@
 
             <div class="project__gallery__container">
                 <img src="../images/dentalbraquets/dentalbraquets_userflow.jpg"
-                    class="project__gallery__image unrevealed" alt="Userflow">
+                    class="project__gallery__image unrevealed"
+                    alt="Userflow">
             </div>
 
             <div class="project__gallery__container">
-                <img src="../images/dentalbraquets/aboutMe_desktop.jpg" class="project__gallery__image unrevealed"
+                <img src="../images/dentalbraquets/aboutMe_desktop.jpg"
+                    class="project__gallery__image unrevealed"
                     alt="Desktop About Me Section">
             </div>
 
             <div class="project__gallery__container">
-                <img src="../images/dentalbraquets/contact_desktop.jpg" class="project__gallery__image unrevealed"
+                <img src="../images/dentalbraquets/contact_desktop.jpg"
+                    class="project__gallery__image unrevealed"
                     alt="Desktop Contact Section">
             </div>
 
@@ -168,7 +209,9 @@
         <!-- FULLSCREEN VIEWER -->
         <div class="project__fullscreen">
             <div class="project__fullscreen__container">
-                <img src="" class="project__fullscreen__image" alt="">
+                <img src=""
+                    class="project__fullscreen__image"
+                    alt="">
                 <button class="project__fullscreen__close">×</button>
                 <button class="project__fullscreen__prev">‹</button>
                 <button class="project__fullscreen__next">›</button>
