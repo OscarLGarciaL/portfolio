@@ -2,7 +2,7 @@
 async function cargarIdioma(idioma) {
     try {
         // Construir la ruta absoluta asegurando que siempre busque en /lang/
-        const rutaJSON = `${window.location.origin}/docs/lang/${idioma}.json`;
+        const rutaJSON = `${window.location.origin}/portfolio/docs/lang/${idioma}.json`;
 
         // Cargar el archivo JSON del idioma seleccionado
         const respuesta = await fetch(rutaJSON);
