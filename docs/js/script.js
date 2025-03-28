@@ -38,9 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("lang-button").addEventListener("click", cambiarIdioma);
 });
 
-
-
-
 // REVEAL
 document.addEventListener("DOMContentLoaded", function () {
     const elements = document.querySelectorAll(".unrevealed");
@@ -84,30 +81,41 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// GOOGLY EYES
-document.addEventListener("mousemove", (event) => {
+// GOOGLY EYES 
+function moveEyes(clientX, clientY) {
     const eyes = document.querySelectorAll(".eye");
 
     eyes.forEach((eye) => {
         const pupil = eye.querySelector(".pupil");
         const eyeRect = eye.getBoundingClientRect();
 
-        // calculates the position of the cursor with respect to the eye
+        // Cursor position
         const eyeX = eyeRect.left + eyeRect.width / 2;
         const eyeY = eyeRect.top + eyeRect.height / 2;
-        const deltaX = event.clientX - eyeX;
-        const deltaY = event.clientY - eyeY;
+        const deltaX = clientX - eyeX;
+        const deltaY = clientY - eyeY;
 
-        // angle towards the cursor
+        // Cursor angle
         const angle = Math.atan2(deltaY, deltaX);
 
-        // maximum distance that the pupil can move within the eye
+        // Max pupil movement
         const maxMove = 5;
         const moveX = Math.cos(angle) * maxMove;
         const moveY = Math.sin(angle) * maxMove;
 
         pupil.style.transform = `translate(${moveX}px, ${moveY}px)`;
     });
+}
+
+// Mouse
+document.addEventListener("mousemove", (event) => {
+    moveEyes(event.clientX, event.clientY);
+});
+
+// Touch screen
+document.addEventListener("touchmove", (event) => {
+    const touch = event.touches[0]; // Get touch position
+    moveEyes(touch.clientX, touch.clientY);
 });
 
 // FILTER MENU
