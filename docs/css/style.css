@@ -720,7 +720,7 @@ select:-webkit-autofill:focus {
     align-items: center;
     transition: bottom 0.3s ease-in-out;
     z-index: 1;
-    margin-bottom: 47px;
+    margin-bottom: 83px;
   }
 
 }
